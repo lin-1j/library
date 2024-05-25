@@ -11,12 +11,13 @@ body {
     grid-template-rows: 1fr 8fr;
     grid-template-columns: 1fr;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(24,26,27);
 }
 
 .top {
     background-color: rgb(21,85,136);
     display: grid;
-    grid-template-columns: 1fr 7fr;
+    grid-template-columns: 1fr 7fr 1fr;
 }
 
 .header-container {
@@ -52,5 +53,64 @@ button.add-book {
 }
 
 .bottom {
-    background-color: rgb(24,26,27);
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+}
+
+.books-container {
+    grid-column: 2 / span 1;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+}
+
+.book-card {
+    
+    width: 225px;
+    height: 300px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.title,
+.author,
+.pages,
+.read,
+.update,
+.delete {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    background-color: rgb(21,85,136);
+    border-radius: 12px 12px 0px 0px;
+    color: white;
+    font-weight: 600;
+}
+
+.author,
+.pages,
+.read {
+    background-color: white;
+}
+
+.update {
+    background-color: rgb(130, 205, 130);
+    color: white;
+}
+
+.delete {
+    background-color: rgb(21,85,136);
+    color: white;
+    border-radius: 0px 0px 12px 12px;
 }
