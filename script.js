@@ -35,6 +35,8 @@ let newBookForm = document.querySelector('.new-book-form').addEventListener('sub
 
 function render() {
   let booksContainer = document.querySelector('.books-container');
+  booksContainer.innerHTML = '';
+  
   for (let bookIndex in myLibrary) {
     let book = myLibrary[bookIndex];
 
