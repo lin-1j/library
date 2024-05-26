@@ -32,3 +32,43 @@ let newBookForm = document.querySelector('.new-book-form').addEventListener('sub
   let newBookForm = document.querySelector('.new-book-form');
   newBookForm.style.display = 'none';
 })
+
+function render() {
+  let booksContainer = document.querySelector('.books-container');
+  for (let book in myLibrary) {
+    let bookCard = document.createElement('div');
+    bookCard.classList.add('book-card');
+    let title = document.createElement('div');
+    title.classList.add('title');
+    title.innerHTML = 'Title:';
+
+    let author = document.createElement('div');
+    author.classList.add('author');
+    author.innerHTML = 'Author:';
+
+    let pages = document.createElement('div');
+    pages.classList.add('pages');
+    pages.innerHTML = 'Pages:';
+
+    let read = document.createElement('div');
+    read.classList.add('read');
+    read.innerHTML = 'Read:';
+
+    let update = document.createElement('div');
+    update.classList.add('update');
+    update.innerHTML = 'Update?';
+    
+    let deleteButton = document.createElement('div');
+    deleteButton.classList.add('delete');
+    deleteButton.innerHTML = 'Delete';
+
+    bookCard.appendChild(title);
+    bookCard.appendChild(author);
+    bookCard.appendChild(pages);
+    bookCard.appendChild(read);
+    bookCard.appendChild(update);
+    bookCard.appendChild(deleteButton);
+
+    booksContainer.appendChild(bookCard);
+  }
+}
