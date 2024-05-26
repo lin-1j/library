@@ -120,3 +120,70 @@ button.add-book {
     color: white;
     border-radius: 0px 0px 12px 12px;
 }
+
+form {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38, 41, 42);
+    width: 300px;
+    height: 500px;
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px; /* Negative half of height. */
+    margin-left: -150px; /* Negative half of width. */
+    border-radius: 16px;
+    font-size: 1.5rem;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+}
+
+.title-container,
+.author-container,
+.pages-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    flex: 1;
+}
+
+.read-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+.read-options {
+    display: flex;
+    gap: 2rem;
+}
+
+input {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.submit-container {
+    flex: 1;
+}
+
+button.submit {
+    padding: 10px 20px;
+    width: 150px;
+    height: 44px;
+    color: white;
+    border-radius: 25px;
+    background-color: rgb(21,85,136);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
