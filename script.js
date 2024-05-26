@@ -35,24 +35,26 @@ let newBookForm = document.querySelector('.new-book-form').addEventListener('sub
 
 function render() {
   let booksContainer = document.querySelector('.books-container');
-  for (let book in myLibrary) {
+  for (let bookIndex in myLibrary) {
+    let book = myLibrary[bookIndex];
+
     let bookCard = document.createElement('div');
     bookCard.classList.add('book-card');
     let title = document.createElement('div');
     title.classList.add('title');
-    title.innerHTML = 'Title:';
+    title.innerHTML = `Title: ${book.title}`;
 
     let author = document.createElement('div');
     author.classList.add('author');
-    author.innerHTML = 'Author:';
+    author.innerHTML = `Author: ${book.author}`;
 
     let pages = document.createElement('div');
     pages.classList.add('pages');
-    pages.innerHTML = 'Pages:';
+    pages.innerHTML = `Pages: ${book.pages}`;
 
     let read = document.createElement('div');
     read.classList.add('read');
-    read.innerHTML = 'Read:';
+    read.innerHTML = `Read: ${book.read}`;
 
     let update = document.createElement('div');
     update.classList.add('update');
