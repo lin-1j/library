@@ -48,8 +48,13 @@ function render() {
       <div class='pages'>Pages: ${book.pages}</div>
       <div class='read'>Read: ${book.read}</div>
       <div class='update'>Update?</div>
-      <div class='delete'>Delete</div>
+      <div class='delete' onclick='removeBook(${bookIndex})'>Delete</div>
     `;
     booksContainer.appendChild(bookCard);
   }
+}
+
+function removeBook(index) {
+  myLibrary.splice(index, 1);
+  render();
 }
