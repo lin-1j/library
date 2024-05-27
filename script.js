@@ -32,7 +32,11 @@ function addBookToLibrary() {
 let addBook = document.querySelector('.add-book');
 addBook.addEventListener('click', () => {
   let newBookForm = document.querySelector('.new-book-form');
-  newBookForm.style.display = 'flex';
+  if (newBookForm.style.display == 'none') {
+    newBookForm.style.display = 'flex';
+  } else {
+    newBookForm.style.display = 'none';
+  }
 })
 
 let newBookForm = document.querySelector('.new-book-form').addEventListener('submit', (event) => {
