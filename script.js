@@ -36,43 +36,20 @@ let newBookForm = document.querySelector('.new-book-form').addEventListener('sub
 function render() {
   let booksContainer = document.querySelector('.books-container');
   booksContainer.innerHTML = '';
-  
+
   for (let bookIndex in myLibrary) {
     let book = myLibrary[bookIndex];
 
     let bookCard = document.createElement('div');
     bookCard.classList.add('book-card');
-    let title = document.createElement('div');
-    title.classList.add('title');
-    title.innerHTML = `Title: ${book.title}`;
-
-    let author = document.createElement('div');
-    author.classList.add('author');
-    author.innerHTML = `Author: ${book.author}`;
-
-    let pages = document.createElement('div');
-    pages.classList.add('pages');
-    pages.innerHTML = `Pages: ${book.pages}`;
-
-    let read = document.createElement('div');
-    read.classList.add('read');
-    read.innerHTML = `Read: ${book.read}`;
-
-    let update = document.createElement('div');
-    update.classList.add('update');
-    update.innerHTML = 'Update?';
-    
-    let deleteButton = document.createElement('div');
-    deleteButton.classList.add('delete');
-    deleteButton.innerHTML = 'Delete';
-
-    bookCard.appendChild(title);
-    bookCard.appendChild(author);
-    bookCard.appendChild(pages);
-    bookCard.appendChild(read);
-    bookCard.appendChild(update);
-    bookCard.appendChild(deleteButton);
-
+    bookCard.innerHTML = `
+      <div class='title'>Title: ${book.title}</div>
+      <div class='author'>Author: ${book.author}</div>
+      <div class='pages'>Pages: ${book.pages}</div>
+      <div class='read'>Read: ${book.read}</div>
+      <div class='update'>Update?</div>
+      <div class='delete'>Delete</div>
+    `;
     booksContainer.appendChild(bookCard);
   }
 }
