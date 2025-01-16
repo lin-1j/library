@@ -115,10 +115,18 @@ button.add-book {
     color: white;
 }
 
+.update:hover {
+    background-color: rgb(99, 180, 99);
+}
+
 .delete {
     background-color: rgb(21,85,136);
     color: white;
     border-radius: 0px 0px 12px 12px;
+}
+
+.delete:hover {
+    background-color: rgb(240, 82, 82);
 }
 
 form {
