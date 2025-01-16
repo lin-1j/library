@@ -8,45 +8,55 @@
     <script src='script.js' defer></script>
 </head>
 <body>
-    <div class='top'>
-        <div class='header-container'>
-            <h1 class='header'>Online Library</h1>
+    <div id ='homepage'>
+        <div class='welcome-container'>
+            <h1>Welcome to lin-1j's Online Library</h1>
+            <p>Where you can easily manage your library of books!</p>
+            <button id='enter-library'>Enter Library</button>
         </div>
     </div>
-    <div class='bottom'>
-        <form class='new-book-form' style='display:none'>
-            <div class="title-container">
-                <label for='title'>Title</label>
-                <input id='title' type='text' required>
+
+    <div id='library' style='display: none'>
+        <div class='top'>
+            <div class='header-container'>
+                <h1 class='header'>Online Library</h1>
             </div>
-            <div class="author-container">
-                <label for='author'>Author</label>
-                <input id='author' type='text' required>
-            </div>
-            <div class="pages-container">
-                <label for='pages'>Pages</label>
-                <input id='pages' type='number' required>
-            </div>
-            
-            <div class='read-container'>
-                <label for='read'>Read?</label>
-                <input type='checkbox' id='read' name='read_option'>
-            </div>
-            <div class="submit-container"><button class=submit type='submit'>Add</button></div>
-            
-        </form>
-        <div class='books-container'>
-            <!--             
-            <div class='book-card'>
-                <div class='title'>Title:</div>
-                <div class='author'>Author:</div>
-                <div class='pages'>Pages:</div>
-                <div class='read'>Read:</div>
-                <div class='update'>Update?</div>
-                <div class='delete'>Delete</div>
-            </div> -->
         </div>
-        <button class='add-book'>+</button>
-    </div>
+        <div class='bottom'>
+            <form class='new-book-form' style='display:none'>
+                <div class="title-container">
+                    <label for='title'>Title</label>
+                    <input id='title' type='text' required>
+                </div>
+                <div class="author-container">
+                    <label for='author'>Author</label>
+                    <input id='author' type='text' required>
+                </div>
+                <div class="pages-container">
+                    <label for='pages'>Pages</label>
+                    <input id='pages' type='number' required>
+                </div>
+                
+                <div class='read-container'>
+                    <label for='read'>Read?</label>
+                    <input type='checkbox' id='read' name='read_option'>
+                </div>
+                <div class="submit-container"><button class=submit type='submit'>Add</button></div>
+                
+            </form>
+            <div class='books-container'>
+                <!--             
+                <div class='book-card'>
+                    <div class='title'>Title:</div>
+                    <div class='author'>Author:</div>
+                    <div class='pages'>Pages:</div>
+                    <div class='read'>Read:</div>
+                    <div class='update'>Update?</div>
+                    <div class='delete'>Delete</div>
+                </div> -->
+            </div>
+            <button class='add-book'>+</button>
+        </div>
+    </div>   
 </body>
 </html>
