@@ -1,0 +1,148 @@
+[33mcommit e738b3173b2e389b2e3809bd3f1137dddf2e7cf2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: lin-1j <96613933+lin-1j@users.noreply.github.com>
+Date:   Thu Jan 16 15:10:26 2025 +1300
+
+    Revert "Add html for a homepage which when clicked shows the library"
+    
+    This reverts commit a000757f7febea8a889538a426f16e8f8b541f37.
+
+[33mcommit a000757f7febea8a889538a426f16e8f8b541f37[m
+Author: lin-1j <96613933+lin-1j@users.noreply.github.com>
+Date:   Thu Jan 16 15:06:29 2025 +1300
+
+    Add html for a homepage which when clicked shows the library
+
+[33mcommit 80595bd9f149e5e30264110a3ab13e1d403d6ccc[m
+Author: lin-1j <96613933+lin-1j@users.noreply.github.com>
+Date:   Thu Jan 16 14:36:32 2025 +1300
+
+    Change update hover color to a lighter colour
+
+[33mcommit c17aab6c5b866a9d03300bdabf8aad20abaf53be[m
+Author: lin-1j <96613933+lin-1j@users.noreply.github.com>
+Date:   Thu Jan 16 14:29:55 2025 +1300
+
+    Change update hover color
+
+[33mcommit 9ed371fcbe4ffd4f25dcfe142767ab41a8d88a6b[m
+Author: lin-1j <96613933+lin-1j@users.noreply.github.com>
+Date:   Thu Jan 16 14:28:21 2025 +1300
+
+    Add hover colours to update and delete buttons
+
+[33mcommit 258fef867b5d01c006897408bfd9d810c3f18c9b[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Mon May 27 22:57:53 2024 +1000
+
+    Adjust add-book button so that if it is clicked twice
+    the form closes
+
+[33mcommit ddf1c89118d310b4d4dba44cf7c867cd49fdd984[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Mon May 27 22:08:58 2024 +1000
+
+    Update readme
+
+[33mcommit e054e9ce3622dab9193d84ae34f19a4c511f1c5a[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Mon May 27 21:59:45 2024 +1000
+
+    Make title, author, pages required fields in the form
+
+[33mcommit 617379887644c6346bac16be8d46ec334dcd3aeb[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Mon May 27 19:47:08 2024 +1000
+
+    Add update read status functionality for each book-card
+
+[33mcommit 1f6a0fb0b92ab6cab97a0e3b535495521513b7ae[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Mon May 27 19:29:41 2024 +1000
+
+    Add delete book functionality to the book cards
+
+[33mcommit 21d10f0e792ca9fd45f6de1d5bba098e9bc2803a[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Mon May 27 19:17:24 2024 +1000
+
+    Modify the method in which a book-card is appended
+    to the book-container
+
+[33mcommit c9075d36379cea13a69d37ccc6ba90069b998fc5[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Sun May 26 22:44:01 2024 +1000
+
+    Fix issue where adding book adds all previous books as well
+    
+    Now when you press 'add' only the current book is added
+    to the books-container
+
+[33mcommit 8e02bb81ebbd1307fd1eb148e04cd9da1b9ce714[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Sun May 26 22:40:14 2024 +1000
+
+    Allow information in form to be included in new book-card
+    
+    Input title, author, pages, and read status now is
+    correctly rendered on page.
+    Issues: update and delete still need fixing
+
+[33mcommit fda13fde16aa812c9fb988f29e1d6c732e4979bd[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Sun May 26 22:32:35 2024 +1000
+
+    Allow the addition of blank book entries to the books-container
+    
+    Issue: adds the current number of books when the add
+    button is pressed (eg adds 1, 2, then 3 etc);
+
+[33mcommit 8ac551d86afd8bbc5b3929505320fff7fdb8e3be[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Sun May 26 22:19:07 2024 +1000
+
+    Allow form to display when add-book button pressed
+    
+    Also allow form to close when 'add' button in form
+    is pressed
+
+[33mcommit dfb6d9b0d06a67a1a3eda9df349ae7f80104f40f[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Sun May 26 20:35:21 2024 +1000
+
+    Add basic form
+    
+    After this the form needs to be configured to
+    normally be hidden and appear when the add-book
+    button is pressed
+
+[33mcommit 1a966703d44f226b1936e8ea2eda75b8f6cb212a[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Sat May 25 23:22:18 2024 +1000
+
+    Hide horizontal and vertical scroll bar
+    
+    But still keep vertical scroll bar functionality
+
+[33mcommit ad9ddfcaf04935611ce2f7657217042f2337d035[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Sat May 25 23:16:41 2024 +1000
+
+    Add html template and css styling for a 'book-card'
+
+[33mcommit 157f1c8dbcbacb0ce21874ed42638139f9d243ef[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Sat May 25 22:33:14 2024 +1000
+
+    Create 'add' book button
+
+[33mcommit 5d83dd2eb6f8a8c770538373ff9ea2619274976f[m
+Author: Jackey2baccey <96613933+Jackey2baccey@users.noreply.github.com>
+Date:   Sat May 25 22:17:58 2024 +1000
+
+    Add header
+
+[33mcommit de6bba873b5a49a45abfdc7aac01d1eab74107f8[m
+Author: lin-1j <96613933+lin-1j@users.noreply.github.com>
+Date:   Mon May 20 21:55:15 2024 +1200
+
+    Initial commit
